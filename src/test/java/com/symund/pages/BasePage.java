@@ -14,4 +14,9 @@ public abstract class BasePage {
 
     @FindBy(xpath = "//li[@data-id=\"logout\"]")
     public WebElement logOutBtn;
+
+    @FindBy(xpath = "//nav[@id='expanddiv']//span[@class='user-status-menu-item__header']")
+    public WebElement username;
+
+
 }
