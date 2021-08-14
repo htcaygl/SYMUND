@@ -12,7 +12,7 @@ Feature:
 
 	#User can not login with any invalid credentials
   @SYMU-307
-  Scenario Outline: Verify that user can not login with invalid credentials
+  Scenario Outline: Verify that user can not login with invalid credentials <username> and <password>
     Given the user is on login page
     When the user enters "<username>" and "<password>"
     And the user click Login button
