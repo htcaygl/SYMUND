@@ -24,6 +24,9 @@ Feature:
       | wrong       |  | wrong       |
       | Employee101 |  | password    |
       | username    |  | Employee123 |
+      | Employee101 |  | employee123 |
+      | employee101 |  | Employee123 |
+      | EMPLOYEE101 |  | Employee123 |
 
 	#User can not login with invalid credentials
   @SYMU-306
