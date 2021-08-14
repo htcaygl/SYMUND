@@ -5,16 +5,12 @@ import com.symund.pages.LoginPage;
 import com.symund.utilities.BrowserUtils;
 import com.symund.utilities.ConfigurationReader;
 import com.symund.utilities.Driver;
-import io.cucumber.java.bs.A;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 
 public class LogInStepDefs {
 
