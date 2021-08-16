@@ -2,7 +2,8 @@
 Feature: 
 	Background:
 		Given the user logged in
-		And the user click user info and click Log out
+	    When the user click user info
+	    And the user click Log out
 
 #User can log out and ends up in login page
 @SYMU-296

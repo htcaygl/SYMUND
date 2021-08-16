@@ -56,14 +56,14 @@ public class LogInStepDefs {
 
     }
 
-    @When("the user click user info and click Log out")
-    public void the_user_click_user_info_and_click() {
-
-        new DashboardPage().userInfo.click();
-        BrowserUtils.waitForClickablility(new DashboardPage().logOutBtn, 4);
-        new DashboardPage().logOutBtn.click();
-
-    }
+//    @When("the user click user info and click Log out")
+//    public void the_user_click_user_info_and_click() {
+//
+//        new DashboardPage().userInfo.click();
+//        BrowserUtils.waitForClickablility(new DashboardPage().logOutBtn, 4);
+//        new DashboardPage().logOutBtn.click();
+//
+//    }
 
     @Then("the user should be able to log out")
     public void the_user_should_be_able_to_log_out() {
@@ -209,5 +209,18 @@ public class LogInStepDefs {
         }
 
         Assert.assertEquals(text, actualMsg);
+    }
+
+    @And("the user click user info")
+    public void theUserClickUserInfo() {
+
+        new DashboardPage().userInfo.click();
+
+    }
+
+    @And("the user click Log out")
+    public void theUserClickLogOut() {
+        BrowserUtils.waitForClickablility(new DashboardPage().logOutBtn, 4);
+        new DashboardPage().logOutBtn.click();
     }
 }
